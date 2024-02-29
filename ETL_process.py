@@ -1,8 +1,6 @@
 import pandas as pd
 import connectDB_API
 import ast
-
-# Data Cleaning and Prepare
 class ETL_process():
     def __init__(self, dataset, categorize_columns, new_table_names, column_to_table, id_column_name):
         self.dataset = dataset
