@@ -91,7 +91,7 @@ class connection_API():
             pandas DataFrame
         """
 
-        self.curr.execute(query)
+        self.cur.execute(query)
         rows = self.cur.fetchall()
         columns = [desc[0] for desc in self.cur.description]  # Sütun adlarını al
 
